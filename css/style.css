@@ -386,7 +386,7 @@ section h3 {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -1017,6 +1017,12 @@ section h3 {
   /* 컨텐츠 공통 */
   .swiper-section.side_menu {
     padding-top: 20px;
+  }
+  .swiper-section.side_menu.section-portfolio {
+    padding-bottom: 20px;
+  }
+  .swiper-section.side_menu.section-about {
+    padding-bottom: 80px;
   }
   section h2 {
     font-size: 20px;

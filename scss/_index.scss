@@ -892,7 +892,6 @@ section {
   /* 컨텐츠 공통 */
   .swiper-section.side_menu {
     padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   section h2 {
@@ -1015,7 +1014,8 @@ section {
   /* 포트폴리오 */
   .section-portfolio {
     .pofol_swiper {
-      height: calc(100% - 80px);
+      max-height: 500px;
+      height: 530px;
       margin-top: 20px;
       padding-bottom: 0;
     }

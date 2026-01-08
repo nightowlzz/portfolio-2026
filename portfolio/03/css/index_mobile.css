@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.maau{max-width: 100%; padding: 0 20px; box-sizing: border-box;}
+  /* main */
+.btm-logo {top: 88%; left: 50%; transform: translate(-50%,0);}
+.btm-logo.show .down-arr {font-size: 20px;}
+.btm-cort img {width: 70px; height: auto;}
+.btm-nike img {width: 20px; margin: 5px 0;}
+.menu.section-main {top: 11vh; transform: translate(-50%, 0%); width: 70%; height: 0; padding: 75vh 0 0;}
+.menu.section-main ul{position: absolute; left: 50%; top: 0; width: 24%; min-width: 90px; height: 100%; transform: translateX(-50%);}
+.menu.section-main ul li{position: relative; margin: 0 auto; padding: 5% 0 0; width: 100%; height: 25%; font-size: calc(5px + 1vh); transform: translateY(0); box-sizing: border-box;}
+.menu.section-main ul li:nth-child(1){left:0%;}
+.menu.section-main ul li:nth-child(2){left:0%;}
+.menu.section-main ul li:nth-child(3){left:0%;}
+.menu.section-main ul li:nth-child(4){left:0%;}
+.menu.section-main ul li p{position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(-50%,-50%);}
+.menu ul li span:first-child{padding: 0; font-size: 6em; }
+.menu ul li span:nth-child(2){font-size: 1em;}
+.menu ul li em{position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 60%; height: 2px; background: #fff;}
+/* apsb 클릭시 실행 css */
+.cotainer.show .menu > ul{width: 100%; height:100%; transition: width .5s;}
+.cotainer.show .menu > ul > li{position: absolute; top:15%; width: 100%; font-size: calc(30px + 1vw);}
+/* footer */
+footer .footer-menu{padding: 30px 30px;}
+footer .footer-menu > p{font-size: 25px;}
+/*main menu*/
+.menu.foot-menu{ margin: 40px 0 0;}
+.menu.foot-menu ul li{width:50%; padding: 7% 0; box-sizing: border-box;}
+.menu.foot-menu ul li:nth-child(1){border-bottom:1px solid #fff; border-right:1px solid #fff;}
+.menu.foot-menu ul li:nth-child(2){border-bottom:1px solid #fff;}
+.menu.foot-menu ul li:nth-child(3){border-right:1px solid #fff; }
+.menu.foot-menu ul li a{display: block; opacity: 0.2;}
+.menu.foot-menu ul li a span{display: block; transition: opacity .3s, left .8s, font-size .3s;}
+.menu.foot-menu ul li a span:first-child{font-size: 9em; line-height: 1; font-weight: bold;}
+.menu.foot-menu ul li a span:nth-child(2){font-size: 1.4em;}
+/* subpage */
+.content .vsu-box div:first-child{float: none; width: 100%;}
+.content .vsu-box div:first-child{float: none;}
+.content .vsu-box div:first-child p{padding: 0;}
+.content .vsu-box div:last-child{float: none; width: 100%; margin: 0;}
+.content .vsu-box div:last-child p{padding: 0; margin: 30px 0;}
+.content .text-box{width:100%;}
+.content .text-box p{font-size: 1.2em;}
+.visual-box-style3 .vsu-box3-2 .moving ,
+.vsu-box1-2 .moving {margin: 0; width: 100%;}
+.last-box {margin: 80px 0;}
+.last-box img {width: 70px;}
+.last-box > span {padding: 15px 0; font-size: 1.6em;}
+/* 공통 width100,block,magin,position만들기 */
+.visual-box-style1{margin: 0;}
+.visual-box-style1 .vsu-box1-1 div.text-box{margin: 30px 0;}
+.visual-box-style1 .vsu-box1-2{position: relative;}
+.visual-box-style1 .vsu-box1-2 .text-box{margin:0 0 30px; padding: 152% 0 0;}
+.visual-box-style1 .vsu-box1-2 .img-box{position: absolute; left: 0; top: 0; margin: 0;}
+.visual-box-style2{margin: 0 0 30px;}
+.visual-box-style3{margin: 0;}
+.visual-box-style3 .vsu-box3-1{position: relative;}
+.visual-box-style3 .vsu-box3-1 .text-box{margin:0; padding: 142% 0 30px;}
+.visual-box-style3 .vsu-box3-1 .img-box{margin:0; position: absolute; left: 0; top: 0; margin: 0;}
+.visual-box-style3 .vsu-box3-2 .text-box {margin: 30px 0 0;}
+
+/* 별도로 수정 */
+.conbox-80 .visual-box-style3 .vsu-box3-1 .text-box { padding: 150% 0 30px;}
+.conbox-80  .visual-box-style1 .vsu-box1-2 .text-box {padding: 120% 0 30px;}
+.conbox-90 .visual-box-style1 .vsu-box1-2 .text-box { padding: 120% 0 30px;}
+
+@media (max-width:500px) {
+  .main-logo {left: 20px; top: 20px;}
+  .main-logo img {width: 80%;}
+  .main-top-text p {display: none;}
+  .main-sns {top: 30px; right: 20px;}
+  .cotainer.show .main-top-text a {transform: translateY(0);}
+  .main-top-text a span{display: none;}
+  .main-top-text a em::before{content: "\e900"; display: block; font-size: 25px; color: red;}
+  /* .cotainer.show .menu > ul > li {top: 36%;} */
+  .menu.side-menu li .pagenum {font-size: 22px; border: 1px solid #fff; padding: 4px 7px 0px;}
+  .menu.side-menu li .scopri {font-size: 15px;}
+  .menu.side-menu .page-left .scopri {left: -5px;}
+  .menu.side-menu .page-right .scopri {right: 5px;}
+}

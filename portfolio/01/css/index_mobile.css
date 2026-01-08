@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.maato1{max-width: 100%; margin:50px 0 0; padding: 0 10px;}
+.sconbox1 {width: 10px}
+/* header */
+.lang{right:10px;}
+.open{position: relative; margin: 0 0 0 40px;}
+.open:before{content: ""; display: block; width: 20px; height: 2px; margin: 5px 0 0; background: #ccc;}
+.open i::before{content: ""; display: block; width: 20px; height: 2px; margin: 5px 0 0; background: #ccc;}
+.open i::after{content: ""; display: block; width: 20px; height: 2px;margin: 5px 0 0;  background: #ccc;}
+.open.show:before{margin: 13px 0 0; transform:rotate(45deg); background: #222;}
+.open.show i::before{display: none; background: #222;}
+.open.show i::after{margin: -3px 0 0; transform: rotate(-45deg); background: #222;}
+.sitemap_menu > li{ margin: 5px 0 0;}
+.sitemap_menu > li > button{font-size: 15px;}
+.sitemap_menu > li > button::after{font-size: 15px;}
+.sitemap_menu > li > button + ul li a{font-size:15px;}
+/* 비주얼 */
+.visual{position: relative; transform-origin:right; overflow: hidden;}
+.dummy{display: block; opacity: 0; width: 100%; height: 100%;}
+.dummy img{max-width: 100%; height: auto;}
+.main_visual{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.main_visual li{position: absolute; left: 0; top: 0; width:100%; height: 100%;background: no-repeat center/ cover;}
+.main_visual li:nth-child(1){background-image: url(../images/main_visual_01_m.jpg);}
+.main_visual li:nth-child(2){background-image: url(../images/main_visual_02_m.jpg);}
+.main_visual li .visu1{display: none;}
+.main_visual li .visu2{display: none;}
+.visual_box{left:50%; transform: translate(-50%,-100%); width: 100%; text-align: center;}
+.visual_box b{font-size: 12px;}
+.visual_box p{padding: 10px 0 0; font-size: 60px; }
+.visual_box p em{font-weight: bold;}
+.visual_box p i{font-weight: bold;}
+.visual span {display: none;}
+/* slider 수정*/
+.visual .control {left: 0; top: auto; bottom:30px; width: 100%;}
+.visual .control a {position: absolute; float: none; bottom: 0; width: 50px; height: 50px; border-radius: 100px; color: #ffffff;}
+.visual .control .prev {left: 10px;}
+.visual .control .next {right: 10px;}
+.visual .control a + a {margin-left:0;}
+.visual .control .prev::before{font-size: 20px;}
+.visual .control .next::before{font-size: 20px;}
+/* 2번째 */
+.content1 h3{line-height: 70px;}
+.content1 h3::after{content: ""; position: absolute; left: 0; bottom: 0;display: block; width: 30px; height: 2px;}
+.content1 > div{position: relative; padding: 0 0 50%; height: 0; }
+.con1_box1{float: left; padding: 0 0 50%; width:100%; height:0; }
+.con1_box1 h3{margin: 30px 30px; font-size: 30px; }
+.con1_box1 ul{margin: 0 30px;}
+.con1_box1 ul li{line-height: 30px;}
+.con1_box2, .con1_box3{width: 100%;}
+.con1_box2 div{height: 0;}
+.flot1{float: none;}
+.flot2{float: none;}
+.flot1 div:first-child{float: right;}
+.flot1 div:last-child{float: left; background:#2bb673;}
+.flot2 div:first-child{float: left;}
+.flot2 div:last-child{float: right; background:#0ba9b5;}
+.box_info{width:50%; padding: 10px 0 0 20px; color: #fff;}
+.box_info h3{font-size: 20px; margin: 30px 30px;}
+.box_info h3::after{background:#fff;}
+.box_info ul li{width: 45%; padding: 0 0 0 30px; line-height: 40px; font-size: 18px; box-sizing: border-box;}
+.flot1 .box_info ul li{width: 100%;}
+.box_img{width: 50%;}
+.con1b2{padding: 20px;}
+.con1b2 p{position: absolute; left: 14px; bottom: 20px; font-size: 25px; color: #fff; word-break: keep-all;}
+.con1b3{background-image:url(../images/main_con01_img05.jpg);}
+/*3번째 process*/
+.main_devprocess {margin: 60px 0 0;}
+.main_devprocess div::before{top: 29%;}
+.main_devprocess div::after{content: "";position: absolute; left: 0; bottom: 20%; width: 100%; height: 1px; background: #ccc;}
+.main_devprocess h2{font-size: 30px;}
+.main_devprocess > p{padding: 10px 0 40px; font-size: 20px;}
+.dev_list{padding: 0 10px;}
+.dev_list li {width: 25%; padding: 30px 0 0;}
+.dev_list li img{margin:0 0 20px; width: 30px; height: auto;}
+.dev_list li.on p::after{content: ""; position: absolute; top: -5px; left: 50%; transform: translateX(-50%); width: 15px; height: 15px; background: radial-gradient(#0ba9b5, #0ba9b5 4px, #fff 4px, #fff 6px, #0ba9b5 6px, #0ba9b5); border-radius: 100%; opacity:1; animation:dot 1 1s both;}
+.main_devprocess ul li p span{padding: 20px 0 5px; font-size: 13px;}
+.main_devprocess ul li p em{font-size: 13px;}
+/*4번쨰 슬라이드*/
+.main_introduction {margin: 60px 0 0;}
+.main_introduction h2 { width: 100%; margin: 0 0 30px; font-size: 30px;}
+/* 무한슬라이더 */
+.image-slide .slide .show {display: block;}
+.image-slide .slide .hide {display: none;}
+.image-slide .slide .fade-in {display: block; animation: slide-fade-in 2s ease-out 0s 1 normal forwards;}
+.image-slide .slide .fade-out {display: block; animation: slide-fade-out 2s ease-out 0s 1 normal forwards;}
+/* 공통 */
+.produc_box{left: 0; bottom: -90px; transform: translateX(0%); width: 100%;}
+.image-slide {width: 100%;}
+.image-slide > .box {width: 100%; overflow: hidden;}
+.image-slide .slide {transform: translateX(0%);}
+.image-slide .slide li {width: 100%}
+.image-slide .control a{font-size: 30px}
+.image-slide .control .prev {left: 10px;}
+.image-slide .control .next {right: 10px;}
+.sconbox1 {width: 100%;}
+.sconbox1 .slide_box{padding: 20px 0 0;}
+.sconbox1 img{position: absolute; left: 10px; bottom: 0; margin: 0 20px 0 0; width: 80px;}
+.sconbox1 h3{padding:0; font-size: 20px;}
+.sconbox1 .tatle{display: block; padding: 0 0 0 100px;}
+.sconbox1 p{display: block; padding: 0 0 0 100px; font-size: 12px}
+.sconbox1 .more{position: absolute; right: 10px; top:10px; width: 30px; height: 30px; border-radius: 100%; background: #0ba9b5 url(../images/icon_plus.png) no-repeat center; background-size: 20px 20px;}
+@keyframes slide-fade-in {
+    0% {opacity: 0; transform: rotate(3deg) scale(1.2);}
+    100% {opacity: 1; transform: rotate(0) scale(1);}
+}
+@keyframes slide-fade-out {
+    0% {opacity: 1; transform: rotate(0) scale(1);}
+    100% {opacity: 0; transform: rotate(-3deg) scale(1.2);}
+}
+/* 5번째 form */
+.info_confirm button {display: none;}
+.info_confirm div label::after {margin: 0 0 0 20px;}
+/* footer */
+footer {padding: 40px 3% 20px;}
+.qick_top{display: none;}
+.utilmenu button{margin: 0 10px 0 0; font-size: 13px; }
+.foot_box{width: 100%; margin: 30px 0 0; font-size: 13px;}
+.foot_box ul{margin: 10px 0 0;}
+.infomation{width: 50%;}
+.infomation ul li em{width: 40%;}
+.infomation ul li i{width:60%;}
+.contact{width: 50%;}
+.contact ul li em{width: 10%;}
+.foot_location{width: 100%;}
+.foot_location ul li em{width: 100%; padding: 10px 0 0;}
+.foot_location ul li:first-child em{padding: 0;}
+.foot_location ul li address{ width: 100%;}
+.sign{clear: both; padding: 30px 0 0; font-size: 10px; box-sizing: border-box;}
+.sign span{color: #0ba9b5;}
+
+@media (max-width:600px) {
+  header{height:50px;}
+  .logo{left: 15px;}
+  .logo a{width: 87px; height: 50px;}
+  .main_menu {display: none;}
+  .lang{position: absolute; top:50%; transform: translateY(-50%);}
+  .lang_btn button{padding: 0 10px; font-size: 10px; line-height: 30px;}
+  .open{margin: 0 0 0 10px;}
+/* 비주얼 */
+  .visual_box{top: 30%; transform: translatex(-50%);}
+  .visual_box b {font-size: 10px;}
+  .visual_box p{padding: 10px 0 0;font-size: 40px;}
+  /* 2번째 */
+  .content1 h3 {line-height: 30px;}
+  .content1 h3::after { left: 0; width: 20px; height: 2px;}
+  .con1_box1 h3 {margin: 5px 10px; font-size: 12px;}
+  .con1_box1 ul {margin: 0 10px;}
+  .con1_box1 ul li {line-height: 20px; font-size: 12px;}
+  .box_info h3 {font-size: 12px; margin: 10px 10px 0;}
+  .box_info ul li{padding: 10px 0 0 10px; line-height: 1.2; font-size: 10px;}
+  .flot1 .box_info ul li{width: 100%;}
+  .box_img{width: 50%;}
+  .con1b2{padding: 20px;}
+  .con1b2 p{font-size: 10px;}
+  /* 3번째 */
+  .main_devprocess{padding: 0 10px;}
+  .main_devprocess h2 {font-size: 20px;}
+  .main_devprocess > p {padding: 10px 0 30px; font-size: 12px;}
+  /* 4번째 슬라이드 */
+  .main_introduction {padding: 0 10px;}
+  .main_introduction h2 {width: 100%; margin: 0 0 20px;font-size: 18px;}
+  .sconbox1 img{width: 50px;}
+  .sconbox1 .tatle{ padding: 0 0 0 70px;}
+  .sconbox1 p{ padding: 0 0 0 70px; }
+  /* 5번쨰form */
+  .onlineadvice{padding: 0 20px;}
+  .main_consulting {margin: 0; padding: 150px 0 0;}
+  .onlineadvice h2 {font-size: 20px;}
+  .person_info ul li label {font-size: 10px;}
+  .person_info ul li input,
+  .person_info ul li select{font-size: 12px;}
+  .info_confirm div label{font-size: 13px;}
+  .info_confirm div label::after {margin: 0 0 0 5px;}
+  .onlineadvice span,
+  .onlineadvice p{font-size: 12px;}
+  .inquiry button {margin: 20px 0 0; width: 100%; line-height: 30px;}
+  /* footer */
+  .foot_box{ margin: 10px 0 0; }
+  .foot_box ul li em{line-height: 15px;}
+  .infomation{width: 50%; font-size: 10px;}
+  .contact{width: 50%; font-size: 10px;}
+  .foot_location{width: 100%; font-size: 10px;}
+}

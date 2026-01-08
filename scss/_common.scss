@@ -1,0 +1,48 @@
+@use '_variables' as var;
+
+/**
+ * @file _common.scss => common.css
+ * @description 공통 레이아웃 및 공통 클래스
+ */
+ 
+/*  --------------- font ---------------  */
+// .main-title {
+//   font-size: 3rem;
+//   font-family: 'S-CoreDream-9Black', 'Roboto Mono', sans-serif;
+// }
+// .slide-title {
+//   margin: 0 0 30px;
+//   line-height: 1;
+// }
+ 
+/*  --------------- color ---------------  */
+.font_col-bl {
+  color: var.$color-blue;
+}
+.bg_col_bl {
+  background-color: var.$color-blue;
+}
+
+.font_col-yl {
+  color: var.$color-yellow;
+}
+.bg_col_yl {
+  background-color: var.$color-yellow;
+}
+
+.font_col-wh {
+  color: var.$color-white;
+}
+.bg_col_wh {
+  background-color: var.$color-white;
+}
+
+.font_col-bk {
+  color: var.$color-black;
+}
+.bg_col_bk {
+  background-color: var.$color-black;
+}
+
+
+/*  --------------- color ---------------  */

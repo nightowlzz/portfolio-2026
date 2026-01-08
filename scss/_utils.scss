@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+@use '_variables' as var;
+
+/**
+ * @file _utils.scss => utils.css
+ * @description 공통 유틸리티 및 키프레임
+ */
+
+/*  --------------- Mixin ---------------  */
+
+/* 사용법 : @include pos(위치:필수작성, 포지션타입:기본값, 개별위치수정); => @include pos('bc', fixed, $bottom: 20px); */
+@mixin position($offset, $type: absolute, $top: null, $left: null, $right: null, $bottom: null, $translate: null) {
+  position: $type;
+
+  @if $offset == 'tl' { top: 0; left: 0; }
+  @else if $offset == 'tc' { top: 0; left: 50%; transform: translateX(-50%); }
+  @else if $offset == 'tr' { top: 0; right: 0; }
+  
+  @else if $offset == 'ml' { top: 50%; left: 0; transform: translateY(-50%); }
+  @else if $offset == 'mc' { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  @else if $offset == 'mr' { top: 50%; right: 0; transform: translateY(-50%); }
+  
+  @else if $offset == 'bl' { bottom: 0; left: 0; }
+  @else if $offset == 'bc' { bottom: 0; left: 50%; transform: translateX(-50%); }
+  @else if $offset == 'br' { bottom: 0; right: 0; }
+
+  // 수치 덮어쓰기
+  @if $top != null { top: $top; }
+  @if $left != null { left: $left; }
+  @if $right != null { right: $right; }
+  @if $bottom != null { bottom: $bottom; }
+  @if $translate != null { transform: $translate; }
+}
+
+/*  --------------- keyframe ---------------  */
+/* intro */
+@keyframes cubeUpAnimation {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(.6);
+  }
+}
+
+@keyframes blackBackgroundFadeOut {
+  0% {
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+  }
+
+  40% {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 100%;
+  }
+
+  80% {
+    width: 70vh;
+    height: 70vh;
+    border-radius: 100%;
+  }
+
+  100% {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+  }
+}
+
+@keyframes textUpAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateCubeAnimation {
+  to {
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
+}
+
+@keyframes textLeftAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-450px) rotate(-5deg) scaleX(1.5);
+  }
+
+  50% {
+    transform: translateX(70px) rotate(4deg) scaleX(.5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0) rotate(-3deg) scaleX(1);
+  }
+
+  70% {
+    transform: translateX(0) rotate(0) scaleX(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0) scaleX(1);
+  }
+}
+
+@keyframes textRightAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(450px) rotate(5deg) scaleX(1.5);
+  }
+
+  50% {
+    transform: translateX(-70px) rotate(-4deg) scaleX(.5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(0) rotate(3deg) scaleX(1);
+  }
+
+  80% {
+    transform: translateX(0) rotate(0) scaleX(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0) scaleX(1);
+  }
+}
+
+@keyframes textHideAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(.5);
+  }
+
+  80% {
+    opacity: .5;
+    transform: translate(-50%, -50%) scale(.7);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@keyframes cubeHideAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(.6);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(.4);
+  }
+
+  80% {
+    opacity: .5;
+    transform: translate(-50%, -50%) scale(.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+}
+
+/* section1 menu */
+@keyframes blackBackgroundFadeIn {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    padding: 0;
+  }
+
+  20% {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+  }
+
+  40% {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 100%;
+  }
+
+  70% {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 100%;
+    padding: 0;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 70px 7% 100px;
+  }
+}
+
+@keyframes fadeInUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+  }
+}

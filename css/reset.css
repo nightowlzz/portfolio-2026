@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* 영문 */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+blockquote,
+pre,
+code,
+address,
+ul,
+ol,
+li,
+menu,
+nav,
+section,
+article,
+aside,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+label,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+hr,
+input,
+button,
+textarea,
+object,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  border: none;
+  color: #fff;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+address,
+cite,
+code,
+em,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hide,
+table caption {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mobile {
+  display: none !important;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+}

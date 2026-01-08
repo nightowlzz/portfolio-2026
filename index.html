@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="웹 퍼블리셔 김미소의 포트폴리오입니다. HTML, CSS, jQuery를 활용한 웹 접근성 및 반응형 디자인 구현 능력을 확인하세요.">
+  <meta name="keywords" content="웹 퍼블리셔, HTML, CSS, jQuery, 반응형 웹, 웹 접근성, 포트폴리오">
+  <meta name="author" content="김미소">
+  <meta property="og:title" content="웹 퍼블리셔 포트폴리오">
+  <meta property="og:image" content="img/favicon-96x96.png">
+  <meta property="og:image:width" content="96">
+  <meta property="og:image:height" content="96">
+
+  <title>웹 퍼블리셔 포트폴리오</title>
+  <link rel="icon" href="img/favicon.ico" type="image/png">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="intro-wrap">
+    <div class="cube-ani-container">
+      <div class="cube-content">
+        <div class="cube-box bg_col_wh top"></div>
+        <div class="cube-box bg_col_yl right"></div>
+        <div class="cube-box bg_col_wh bottom"></div>
+        <div class="cube-box bg_col_yl left"></div>
+        <div class="cube-box bg_col_bl back"></div>
+        <div class="cube-box bg_col_bl front"></div>
+      </div>
+    </div>
+    <div class="intro_text-container">
+      <div>
+        <h1>PORTFOLIO</h1>
+        <div class="intro_text-desc"><span class="font_col-bl">WEB</span><span class="font_col-yl">PUBLISHER</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="swiper-container">
+      <section class="swiper-section side_menu section-about">
+        <div class="inner">
+          <nav class="snb">
+            <a href="#" class="move_page pofol_move" title="포트폴리오 보기"><span class="hide">포트폴리오 보기</span></a>
+            <a href="#" class="back_menu" title="홈으로"><span class="hide">홈으로</span></a>
+          </nav>
+          <h2>ABOUT</h2>
+          <div class="about-text">
+            <span class="title">안녕하세요!<br />저의 이름은 김미소 입니다.</span>
+            <p>웹 개발에 대한 열정을 가지고 있으며, HTML, CSS, JavaScript를 기본으로 React, Next.js, TypeScript와 같은 최신 라이브러리와 프레임워크를 활용하여<br /> 효율적이고 유지보수가 용이한 웹 애플리케이션을 개발하고 있습니다.<br />
+              3년의 경력을 통해 다양한 프로젝트를 경험하며 사용자 경험(UX)과 웹 접근성을 고려한 반응형 웹사이트를 만드는 것이 저의 전문 분야입니다.<br />
+              디자인에 맞춰 꼼꼼히 퍼블리싱하고, 개발팀과의 원활한 소통을 통해 개발하기 편한 방향으로 프로젝트를 진행하는 것을 중요시합니다.</p>
+          </div>
+          <div class="about-skill">
+            <h3 class="skill-title">SKILL</h3>
+            <ul class="skill-list">
+              <li>
+                <h4>HTML5</h4>
+                <p>
+                  <span>- 유효성 검사 및 표준 준수한 MarkUp (W3C 검사 도구 활용)</span>
+                  <span>- 웹 접근성 준수를 위한 구조적 마크업 작업</span>
+                  <span>- 대체 텍스트 및 IR 기법</span>
+                  <span>- 구조에 맞는 시멘틱 태그 사용</span>
+                </p>
+              </li>
+              <li>
+                <h4>CSS3</h4>
+                <p>
+                  <span>- 다양한 애니메이션 구현</span>
+                  <span>- @media를 사용한 반응형 처리</span>
+                  <span>- 가상 선택자를 자유롭게 사용</span>
+                  <span>- 스타일 가이드 작성 및 유지 관리</span>
+                  <span>- CSS 라이브러리: SCSS, Bootstrap, Tailwind CSS, Styled-components, Vuetify</span>
+                </p>
+              </li>
+              <li>
+                <h4>JavaScript & Libraries</h4>
+                <p>
+                  <span>- jQuery 및 Vanilla JS를 이용한 다양한 UI/UX 구현</span>
+                  <span>- React 및 Next.js,Vue를 활용한 SPA 및 SSR 웹 퍼블리싱 및 데이터 바인딩 구형</span>
+                  <span>- TypeScript를 통한 정적 타입 검사 및 코드 품질 향상</span>
+                </p>
+              </li>
+              <li>
+                <h4>Cross Browsing</h4>
+                <p>
+                  <span>- IE, chromee, Firefox 등 다양한 브라우저에서 일관된 표현 보장</span>
+                  <span>- 디자인에 맞게</span>
+                </p>
+              </li>
+              <li>
+                <h4>웹 접근성</h4>
+                <p>
+                  <span>- W3C 웹 접근성 가이드라인 준수</span>
+                  <span>- 비장애인과 장애인 모두를 고려한 접근성 준수</span>
+                </p>
+              </li>
+              <li>
+                <h4>SEO</h4>
+                <p>
+                  <span>- 검색 엔진 최적화(SEO) 기법을 적용하여 웹사이트의 가시성 향상</span>
+                </p>
+              </li>
+              <li>
+                <h4>Adobe</h4>
+                <p>
+                  <span>- Photoshop, Illustrator 툴 사용 가능</span>
+                </p>
+              </li>
+              <li>
+                <h4>기타</h4>
+                <p>
+                  <span>- Git, Zeplin, Slack, Notion 기본 사용</span>
+                  <span>- CI/CD 도구 및 프로세스 이해</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p class="contact"><a href="tel:01033867068">tel. 010.3386.6068</a><a href="mailto:owl6068@naver.com">email. owl6068@naver.com</a></p>
+        </div>
+      </section>
+
+      <section class="swiper-section section-main">
+        <div class="inner">
+          <h2 class="hide">메인메뉴</h2>
+          <nav class="gnb">
+            <div class="gnb-menu a_menu"><a href="#" class="about"><p>ABOUT</p></a></div>
+            <div class="gnb-menu p_menu"><a href="#" class="porfo"><p>PORTFOLIO</p></a></div>
+            <div class="gnb-menu con_menu">
+              <div class="info_hide-box">
+                <p class="contact">
+                  <span>CONTACT</span>
+                  <a href='tel:010-3386-7068'>010.3386.7068</a>
+                  <a href='malito:owl6068@naver.co'>owl6068@naver.com</a>
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <section class="swiper-section side_menu section-portfolio">
+        <div class="inner">
+          <nav class="snb">
+            <a href="#" class="move_page about_move" title="포트폴리오 보기"><span class="hide">포트폴리오 보기</span></a>
+            <a href="#" class="back_menu" title="홈으로"><span class="hide">홈으로</span></a>
+          </nav>
+          <h2>PORTFOLIO</h2>
+          <div class="pofol_swiper">
+            <div class="swipe-content">
+              <ul class="slide">
+                <li class="big">
+                  <div>
+                    <a href="#" class="pofol-op-box">
+                      <div class="info_box">
+                        <h3>빅펀티앤피 (전자책제작)</h3>
+                        <ul class="page_info">
+                          <li><strong>Date</strong><em>25.04 ~ 25.11 (프리랜서)</em></li>
+                          <li><strong>Date</strong><em>JavaScript, SCSS, CSS, HTML</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>YBM 5,6학년 영어 전자문제집</strong></li>
+                        <li><strong>YBM 5,6학년 음악 전자문제집</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="fe">
+                  <div>
+                    <a href="https://separated-sting-ae9.notion.site/Front-Portfolio-18c888f59876805ab8c2e678453dc29d" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>프론트엔드 (포트폴리오)</h3>
+                        <ul class="page_info">
+                          <li><strong>Tech</strong><em>react, next.js, typescript 등등</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>Mogazoa</strong></li>
+                        <li><strong>Poketmon</strong></li>
+                        <li><strong>Taskify</strong></li>
+                        <li><strong>Rolling</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="allra">
+                  <div>
+                    <a href="https://www.allra.co.kr/" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>올라핀테크 (쇼핑몰선장산)</h3>
+                        <ul class="page_info">
+                          <li><strong>Date</strong><em>22.10 ~ 23.05 (사원)</em></li>
+                          <li><strong>Tech</strong><em>Vue.js, JavaScript, SCSS, CSS, HTML</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>선정산신청 방식 재구성</strong></li>
+                        <li><strong>거래내역 재구성</strong></li>
+                        <li><strong>운영적 유지보수</strong></li>
+                        <li><strong>운영적 기능추가</strong></li>
+                        <li><strong>A/B TEST</strong></li>
+                        <li><strong>새사업 사이트 구축</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="kacelab">
+                  <div>
+                    <a href="https://www.kacelab.com/Work.php" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>케이스랩 (에이전시)</h3>
+                        <ul class="page_info">
+                          <li><strong>Date</strong><em>22.01 ~ 22.07 (사원)</em></li>
+                          <li><strong>Tech</strong><em>JavaScript, jQuery, SCSS, CSS, HTML, 가비아</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>코오롱사내렌트</strong></li>
+                        <li><strong>SILD</strong></li>
+                        <li><strong>버스콜</strong></li>
+                        <li><strong>맛좀봐라</strong></li>
+                        <li><strong>TeenStudio</strong></li>
+                        <li><strong>듀오백 유지보수</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="dibidibi">
+                  <div>
+                    <a href="https://www.dibidibi.com/" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>디비디비 (오픈마켓)</h3>
+                        <ul class="page_info">
+                          <li><strong>Date</strong><em>20.11 ~ 21.10 (계약직)</em></li>
+                          <li><strong>Tech</strong><em>JavaScript, jQuery, SCSS, CSS, HTML</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>유저 페이지 재구성</strong></li>
+                        <li><strong>셀러 페이지 재구성</strong></li>
+                        <li><strong>셀러 뱃지 기능추가</strong></li>
+                        <li><strong>선물하기 기능추가</strong></li>
+                        <li><strong>운영 유지보수</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="hdm">
+                  <div>
+                    <a href="javascript:void(0)" class="pofol-op-box">
+                      <div class="info_box">
+                        <h3>학생독립만세 (ISA)</h3>
+                        <ul class="page_info">
+                          <li><strong>Date</strong><em>20.08 ~ 20.10 (인턴)</em></li>
+                          <li><strong>Tech</strong><em>JavaScript, jQuery, SCSS, CSS</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>서비스소개 재구성</strong></li>
+                        <li><strong>새로운 강의 추가</strong></li>
+                        <li><strong>자동결제시스템 기능추가</strong></li>
+                        <li><strong>운영 유지보수</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="novel">
+                  <div>
+                    <a href="/portfolio/01/index.html" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>Novel Works (포트폴리오)</h3>
+                        <ul class="page_info">
+                          <li><strong>Width</strong><em>320px ~ 1920px</em></li>
+                          <li><strong>Browser</strong><em>chrome, firefox, IE10, 안드로이드</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>노블웍스</strong><em>index</em></li>
+                        <li><strong>COMPANY</strong><em>회사정보</em></li>
+                        <li><strong>COMPANY</strong><em>특허사항</em></li>
+                        <li><strong>BISINESS</strong><em>제품개발</em></li>
+                        <li><strong>BISINESS</strong><em>원천기술 개발</em></li>
+                        <li><strong>PRODUCT</strong></li>
+                        <li><strong>PRODUCT</strong><em>상품</em></li>
+                        <li><strong>TECHNOLOGY</strong></li>
+                        <li><strong>CONTATCT</strong></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="nice">
+                  <div>
+                    <a href="/portfolio/02/index.html" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>NICE평가정보 (포트폴리오)</h3>
+                        <ul class="page_info">
+                          <li class="pc"><strong>Width</strong><em>width 1300px ~ 1920px</em></li>
+                          <li><strong>Browser</strong><em>chrome, firefox, IE10</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>NICE평가정보</strong><em>index</em></li>
+                        <li><strong>회사소개</strong><em>Vision & Value</em></li>
+                        <li><strong>서비스소개</strong><em>싱용정보서비스</em></li>
+                        <li><strong>서비스소개</strong><em>기업평가서비스</em></li>
+                        <li><strong>신용등급체계공시</strong><em>개인신용평점</em></li>
+                        <li><strong>알림마당</strong><em>IR Book</em></li>
+                        <li><strong>알림마당</strong><em>Newsletter</em></li>
+                        <li><strong>알림마당</strong><em>공지및공고</em></li>
+                        <li><strong>인재채용</strong><em>인재상</em></li>
+                        <li><strong>인재채용</strong><em>인사제도</em></li>
+                        <li><strong>인재채용</strong><em>인재육성</em></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="cortez">
+                  <div>
+                    <a href="/portfolio/03/intro.html" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>Cortez (포트폴리오)</h3>
+                        <ul class="page_info">
+                          <li><strong>Width</strong><em>320px ~ 1920px</em></li>
+                          <li><strong>Browser</strong><em>chrome, firefox, IE10, 안드로이드</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>Cortez</strong><em>intro</em></li>
+                        <li><strong>Cortez</strong><em>index</em></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+                <li class="insta">
+                  <div>
+                    <a href="/portfolio/04/index.html" class="pofol-op-box" target="_blank">
+                      <div class="info_box">
+                        <h3>InstaBar (포트폴리오)</h3>
+                        <ul class="page_info">
+                          <li class="pc"><strong>Width</strong><em>1700px ~ 1920px</em></li>
+                          <li><strong>Browser</strong><em>chrome, firefox, IE10, 안드로이드</em></li>
+                        </ul>
+                      </div>
+                      <ul class="page_count">
+                        <li><strong>InstaBar</strong><em>index</em></li>
+                        <li><strong>제품</strong><em>sub1</em></li>
+                      </ul>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-navigation">
+              <ul class="indicator">
+              </ul>
+              <a href="#" class="prev"><span class="hide">이전</span></a>
+              <a href="#" class="next"><span class="hide">다음</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+
+</html>

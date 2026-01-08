@@ -1014,8 +1014,8 @@ section {
   /* 포트폴리오 */
   .section-portfolio {
     .pofol_swiper {
-      max-height: 500px;
-      height: 530px;
+      max-height: 600px;
+      height: 100%;
       margin-top: 20px;
       padding-bottom: 0;
     }
@@ -1054,7 +1054,7 @@ section {
 
         li {
           width: 50%;
-          height: 46px;
+          height: 54px;
 
           &:nth-child(4)::before,
           &:nth-child(10)::before {

@@ -1017,7 +1017,6 @@ section h3 {
   /* 컨텐츠 공통 */
   .swiper-section.side_menu {
     padding-top: 20px;
-    padding-bottom: 20px;
   }
   section h2 {
     font-size: 20px;
@@ -1109,7 +1108,8 @@ section h3 {
   }
   /* 포트폴리오 */
   .section-portfolio .pofol_swiper {
-    height: calc(100% - 80px);
+    max-height: 600px;
+    height: 100%;
     margin-top: 20px;
     padding-bottom: 0;
   }
@@ -1140,7 +1140,7 @@ section h3 {
   }
   .section-portfolio .pofol-op-box .page_count li {
     width: 50%;
-    height: 46px;
+    height: 54px;
   }
   .section-portfolio .pofol-op-box .page_count li:nth-child(4)::before, .section-portfolio .pofol-op-box .page_count li:nth-child(10)::before {
     display: none;
